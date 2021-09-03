@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+@font-face {
+    font-family: gilroy;
+    src: url(fonts/Gilroy-FREE/Gilroy-Light.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7e7;
+}
+#loader{
+
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 6s both;
+}
+#wrapperload{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+}
+#wrapperload .element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#wrapperload .element img{
+    width: 45%;
+}
+#wrapperload .element:nth-child(1){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+#wrapperload .element:nth-child(2){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+#wrapperload .element:nth-child(3){
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+@keyframes anim{
+    to{
+        margin-top: -100px;
+    }
+}
+@keyframes anim2{
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+#bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+nav {
+    width: 85%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+}
+nav h1 {
+    background-image: url(assets/logogif.gif);
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 0.75;
+    margin: 10px 0;
+}
+nav #links {
+    display: flex;
+    align-items: center;
+}
+nav #links a{
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    opacity: 0.85;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+nav #links a:nth-child(2) {
+    opacity: 0.45;
+}
+nav #links a:nth-child(2):hover {
+    opacity: 0.85;
+}
+nav #links i {
+    margin-left: 50px;
+}
+#menu{
+    cursor: pointer;
+}
+#sections {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 80px);
+}
+#left {
+    width: 50%;
+    height: 100%;
+    padding: 150px;
+}
+#left #smline {
+    width: 100px;
+    height: 3px;
+    margin-top: 40px;
+    background-color: #000;
+    opacity: 0.85;
+}
+#left h4 {
+    font-family: gilroy;
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#left img {
+    width: 35%;
+    margin-top: 15px;
+}
+#left h5 {
+    font-size: 14px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.45);
+}
+#left h5 span {
+    color: #441cc6;
+}
+#playbtn {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+#playbtn i {
+    font-size: 50px;
+    color: #0b093b;
+}
+#playbtn h5 {
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.85);
+}
+#contact {
+    margin-top: 250px;
+}
+#contact h3 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#contact h6 {
+    margin-top: 5px;
+    font-size: 13px;
+}
+#contact h6 span {
+    color: #441cc6;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+}
+#right img {
+    margin-top: 55px;
+    width: 80%;
+}
